@@ -27,6 +27,11 @@ const dist = Array.from({ length: n }, () =>
     )
 )
 
+/*
+    This problem can be solved with Dijkstra, plus the direction extra state
+    so dist[3][0][1] means that we are in cell (3, 0) going down
+*/
+
 // Wish JS had a built-in priority queue
 let pseudoQueue = [[[startX, startY], 3]]
 
@@ -82,7 +87,7 @@ const ans1 = Math.min(...dist[endX][endY])
 console.log(ans1)
 
 /*
-    wanted to do some cool ascii but it this just sucks XD
+    wanted to do some cool ascii but this just sucks XD
 
     ***********
     *         *
