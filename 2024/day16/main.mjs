@@ -95,7 +95,7 @@ console.log(ans1)
     *         *
     ***********
 
-    We solve part2 by doing a reverse BFS, that is we start from then end.
+    We solve part2 by doing a reverse BFS, that is we start from the end.
     At each step, we process a cell and check if its neighbors can reach it
     at an optimal cost, by cheking the distance array computed in part1 plus
     the cost of stepping/turning.
